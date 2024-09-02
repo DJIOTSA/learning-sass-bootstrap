@@ -24,6 +24,7 @@ Before you start, you need to at least basic understanding of:
 
 - CSS
 - Of any programming language
+- Install node.js for 
   
 
 ## 🚀 Getting Started

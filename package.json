@@ -1,0 +1,25 @@
+{
+  "name": "learning-sass-bootstrap",
+  "version": "1.0.0",
+  "description": "Welcome to my **Sass and Bootstrap Learning Repository**! 🎉 This repository serves as a comprehensive collection of projects, exercises, and notes as I dive into the world of Sass (Syntactically Awesome Style Sheets) and Bootstrap.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJIOTSA/learning-sass-bootstrap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DJIOTSA/learning-sass-bootstrap/issues"
+  },
+  "homepage": "https://github.com/DJIOTSA/learning-sass-bootstrap#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  }
+}
