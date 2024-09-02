@@ -58,7 +58,7 @@ Ce repo est conçu pour suivre mes progrès et présenter mon parcours dans la m
 Pour débuter, clonez ce répertoire et explorez les différentes branches dédiées à des leçons ou projets spécifiques. Vous pouvez exécuter les exemples en local et expérimenter le code pour approfondir votre compréhension.
 
 ```bash
-git clone https://github.com/votre-nom-d'utilisateur/sass-bootstrap-learning.git
+git clone https://github.com/DJIOTSA/learning-sass-bootstrap.git
 ```
 
 ## 💡 Contributions
