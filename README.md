@@ -18,6 +18,14 @@ This repo is designed to track my progress and showcase my journey in mastering 
 - **Code Snippets**: Helpful snippets and patterns that solve common design challenges.
 - **Step-by-Step Tutorials**: Guides and exercises that walk through the key concepts of Sass and Bootstrap, from basics to advanced techniques.
 
+## Requirements
+
+Before you start, you need to at least basic understanding of:
+
+- CSS
+- Of any programming language
+  
+
 ## 🚀 Getting Started
 
 To get started, clone this repository and explore the different branches dedicated to specific lessons or projects. You can run the examples locally and experiment with the code to deepen your understanding.
@@ -52,6 +60,16 @@ Ce repo est conçu pour suivre mes progrès et présenter mon parcours dans la m
 - **Projets d'Exemple** : Des exemples concrets où Sass et Bootstrap sont implémentés, démontrant des applications pratiques des deux outils.
 - **Extraits de Code** : Des extraits et des modèles utiles qui résolvent des défis de design courants.
 - **Tutoriels Pas-à-Pas** : Des guides et exercices qui expliquent les concepts clés de Sass et Bootstrap, des bases aux techniques avancées.
+
+
+## Prerequis
+
+Avant de commencer cette aventure il est neccessaire d'avoir aumoins les connaissances suivantes en:
+
+- CSS
+- N'importe quel langage de programmation
+
+
 
 ## 🚀 Pour Commencer
 
