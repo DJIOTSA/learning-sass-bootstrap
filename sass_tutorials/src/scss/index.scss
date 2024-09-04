@@ -2,8 +2,10 @@
 @charset 'utf-8';
 
 // import variables & functions
+@import 'functions';
 @import 'variables';
 @import 'base';
+
 
 
 // base & layout
@@ -20,6 +22,7 @@
 
 
 // utilities (margin, padding, opacity)
+@import "utilities"
 
 
 
