@@ -1,4 +1,40 @@
-// loop
-@each $key, $val in $colors{
-    
+// @each loop: iterate through a list and perform
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  // light variations (for loop)
+  @for $i from 1 through 9 {
+    .text-#{$key}-light-#{$i} {
+      color: mix(
+        white,
+        $val,
+        ($i * 10)
+      ); // mix is used to mix colors (so we are mixing the white color with the $val color for $i*10 percentage per iterations
+    }
+
+    .b-#{$key}-light-#{$i} {
+      background-color: mix(white, $val, $i * 10);
+    }
+  }
+
+  // dark variations (for loop)
+  @for $i from 1 through 9 {
+    .text-#{$key}-dark-#{$i} {
+      color: mix(
+        black,
+        $val,
+        $i * 10
+      ); // mix is used to mix colors (so we are mixing the white color with the $val color for $i*10 percentage per iterations
+    }
+
+    .b-#{$key}-dark-#{$i} {
+      background-color: mix(black, $val, $i * 10);
+    }
+  }
 }
