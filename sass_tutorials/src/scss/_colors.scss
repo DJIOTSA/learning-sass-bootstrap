@@ -11,14 +11,11 @@
   // light variations (for loop)
   @for $i from 1 through 9 {
     .text-#{$key}-light-#{$i} {
-      color: mix(
-        white,
-        $val,
-        ($i * 10)
-      ); // mix is used to mix colors (so we are mixing the white color with the $val color for $i*10 percentage per iterations
+      color: mix(white, $val, ($i * 10));
+      // mix is used to mix colors (so we are mixing the white color with the $val color for $i*10 percentage per iterations
     }
 
-    .b-#{$key}-light-#{$i} {
+    .bg-#{$key}-light-#{$i} {
       background-color: mix(white, $val, $i * 10);
     }
   }
@@ -26,14 +23,10 @@
   // dark variations (for loop)
   @for $i from 1 through 9 {
     .text-#{$key}-dark-#{$i} {
-      color: mix(
-        black,
-        $val,
-        $i * 10
-      ); // mix is used to mix colors (so we are mixing the white color with the $val color for $i*10 percentage per iterations
+      color: mix(black, $val, $i * 10clear);
     }
 
-    .b-#{$key}-dark-#{$i} {
+    .bg-#{$key}-dark-#{$i} {
       background-color: mix(black, $val, $i * 10);
     }
   }
