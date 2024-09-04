@@ -1,23 +1,34 @@
-.card{
-    display: block;
-    padding: $base-padding;
-    border: $base-border-thickness solid #ddd;
-    box-shadow: $base-box-shadow;
+// math module
+@use "sass:math";
 
-    .card-title{
-        font-size: $base-font-size;
-        padding-bottom: $base-padding;
-        font-weight: bold;
+.card {
+  display: block;
+  padding: $base-padding;
+  border: $base-border-thickness solid #ddd;
+  box-shadow: $base-box-shadow;
+  border-radius: math.div(
+    $base-border-radius,
+    4
+  ); // perform the division of the base-border-radius by 4 using the sass:math module
+
+  .card-title {
+    font-size: $font-size-lg;
+    padding-bottom: $base-padding;
+    font-weight: bold;
+  }
+
+  .card-body {
+    font-size: $base-font-size;
+
+    a {
+      text-decoration: underline;
     }
-
-    .card-body{
-        font-size: $base-font-size;
-        
-        a{
-            text-decoration: underline;
-        }
-    }
-
-    
+  }
 }
 
+
+// debug sass
+@debug "hello from this end";
+@debug math.div(10, 3);
+@debug math.floor(10.3);
+@debug math.max(10px, 6789px, 23px);
