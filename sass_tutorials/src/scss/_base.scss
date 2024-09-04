@@ -98,3 +98,45 @@
   font-weight: 900;
 }
 
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+ol, ul {
+  list-style: none; /* Removes default list style */
+}
+
+ol, ul {
+  margin-left: 1.5em; /* Adds a default indentation for lists */
+}
+
+li {
+  margin-bottom: 0.5em; /* Adds space between list items */
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a, li {
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+}
+
+
