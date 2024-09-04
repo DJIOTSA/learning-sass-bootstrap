@@ -8,20 +8,20 @@ $font-size-xxl: $base-font-size * 3;
 $font-family: "Poppins", system-ui;
 
 // theme colors
-$primary: #326dee;
-$secondary:#1ac888;
-$error: #d32752;
-$info: #f6c31c;
-$navy: navy;
-$blue: #1919e6;
-$red: #e61919;
-$yellow: #e6e619;
-$green: #19e635;
-$orange: #ffa600;
-$gray: #808080;
-$black: black;
-$white: white;
-$purple: #9900ff;
+$primary: #326dee !default;
+$secondary:#1ac888 !default;
+$error: #d32752 !default;
+$info: #f6c31c !default;
+$navy: navy !default;
+$blue: #1919e6 !default;
+$red: #e61919 !default;
+$yellow: #e6e619 !default;
+$green: #19e635 !default;
+$orange: #ffa600 !default;
+$gray: #808080 !default;
+$black: black !default;
+$white: white !default;
+$purple: #9900ff !default;
     
 
 // using map to create color palette

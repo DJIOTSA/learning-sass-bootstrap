@@ -1,0 +1,9 @@
+// override the default value
+$black: navy;
+
+.hello{
+    color: $black;
+}
+
+// import the main sass file here
+@import "src/scss";
