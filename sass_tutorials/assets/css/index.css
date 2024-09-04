@@ -81,6 +81,32 @@
   font-weight: 900;
 }
 
+@media (min-width: 0) {
+  .responsive-text {
+    color: #e61919;
+  }
+}
+@media (min-width: 480px) {
+  .responsive-text {
+    color: purple;
+  }
+}
+@media (min-width: 720px) {
+  .responsive-text {
+    color: green;
+  }
+}
+@media (min-width: 960px) {
+  .responsive-text {
+    color: primary;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-text {
+    color: yellow;
+  }
+}
+
 .text-primary {
   color: #326dee;
 }
@@ -3357,27 +3383,27 @@
 }
 
 .mb-0 {
-  margin-boottom: 0;
+  margin-bottom: 0;
 }
 
 .mb-1 {
-  margin-boottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mb-2 {
-  margin-boottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-3 {
-  margin-boottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .mb-4 {
-  margin-boottom: 4.5rem;
+  margin-bottom: 4.5rem;
 }
 
 .mb-5 {
-  margin-boottom: 6rem;
+  margin-bottom: 6rem;
 }
 
 .ml-0 {
