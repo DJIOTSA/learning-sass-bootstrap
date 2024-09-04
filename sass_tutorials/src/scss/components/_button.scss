@@ -1,0 +1,34 @@
+// create a mixin with the parameter $bg-color and #e2e2e2 as the default value
+@mixin btn($bg-color: #e2e2e2) {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: $base-padding $base-padding * 2;
+    border-radius: $base-border-radius;
+    background-color: $bg-color;
+}
+
+// generic btn
+.btn {
+    @include btn;
+}
+
+@each $key, $val in $colors {
+  .btn-#{$key} {
+    @include btn($val); // include the btn mixin
+    &::hover{
+        background-color: lighten($val, 5);
+    }
+  }
+
+  .btn-outline-#{$key} {
+    @include btn($white); // include the btn mixin
+    border: $base-border-thickness solid $val;
+    &:hover{
+        background-color: $val;
+    }
+  }
+}
+
+
