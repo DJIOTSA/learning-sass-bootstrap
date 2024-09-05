@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "SCSS",
+    "BOOTSTRAP",
+    "HTML",
+    "CSS",
+    "JAVASCRIPT",
+    "PORTFOLIO",
+    "MHULO"
+  ],
+  "author": {
+    "name": "DJIOTSA DJOUAKE CHRISTIAN DARYN",
+    "email": "mhulodjiotsa@gmail.com",
+    "linkdin": "https://www.linkedin.com/in/djiotsa-djouake-christian-daryn-36470a253",
+    "gitHub": "https://github.com/DJIOTSA"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "purgecss": "^6.0.0",
+    "sass": "^1.78.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "autoprefixer": "^10.4.20",
+    "bootstrap": "^5.3.3",
+    "postcss": "^8.4.45"
+  }
+}
