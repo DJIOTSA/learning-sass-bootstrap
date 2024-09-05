@@ -13,7 +13,7 @@ gulp.task('watch', function () {
     // to make that gulp watch all the .scss and .html files
     // this to make sure that if a css element is added on html the css will automatically add the element to the css
     // since we are removing all the elements that are not used in our html files
-    gulp.watch(['./scss/**/*.scss', "*.html" ], gulp.series('sass')); 
+    gulp.watch(['./scss/**/*.scss', "*.html], gulp.series('sass')); 
 });
 
 gulp.task('default', gulp.series('sass', 'watch'));
