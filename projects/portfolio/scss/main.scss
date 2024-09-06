@@ -1,44 +1,40 @@
-// abstracts
-@use "abstracts/variables";
-@use "abstracts/breakpoints";
-@use "abstracts/functions";
-@use "abstracts/gaps";
-@use "abstracts/mixins";
-@use "abstracts/placeholders";
+// force utf8 encoding
+@charset 'utf-8';
 
+// customs
+@import "customs/customs";
+
+// abstracts
+@import "abstracts/mixins";
 
 // components
-@use "components/buttons";
-@use "components/cards";
-@use "components/carousel";
-@use "components/colors";
-@use "components/dropdown";
-@use "components/flex-text";
-
+@import "components/buttons";
 
 // base
-@use "base/animations";
-@use "base/base";
-@use "base/reset";
-@use "base/typography";
+@import "base/animations";
+@import "base/typography";
 
 // layouts
-@use "layouts/footer";
-@use "layouts/forms";
-@use "layouts/grid";
-@use "layouts/header";
-@use "layouts/navbar";
-@use "layouts/sidebar";
+@import "layouts/navbar";
+@import "layouts/header";
+@import "layouts/companies";
+@import "layouts/services";
+@import "layouts/testimony";
+@import "layouts/faq";
+@import "layouts/portfolio";
+@import "layouts/get-started";
+@import "layouts/footer";
 
 
 // themes
-@use 'themes/dark';
-@use 'themes/default';
-@use 'themes/light';
+@import 'themes/dark';
+@import 'themes/default';
+@import 'themes/light';
 
-// custom
-@use "customs/customs";
 
 
 // // pages
 // @use "./pages";
+
+// vendors
+@import "vendors/fontawesome";

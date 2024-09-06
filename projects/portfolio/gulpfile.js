@@ -1,11 +1,11 @@
 const gulp = require("gulp")
 const sass = require("gulp-sass")(require("sass"))
-// const purgecss = require("gulp-purgecss") // this module will be used to remove all the css element that we are not using
+const purgecss = require("gulp-purgecss") // this module will be used to remove all the css element that we are not using
 
 gulp.task('sass', function () {
     return gulp.src('./scss/**/*.scss')  // Source folder
         .pipe(sass().on('error', sass.logError))
-        // .pipe(purgecss({ content: ["*.html"]})) // this remove all the css code that is not used on our html files
+        .pipe(purgecss({ content: ["*.html"]})) // this remove all the css code that is not used on our html files
         .pipe(gulp.dest('assets/css'));        // Destination folder
 });
 

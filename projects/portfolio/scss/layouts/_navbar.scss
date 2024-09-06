@@ -1,0 +1,20 @@
+
+.menu{
+    @include gradient;
+    li{
+        padding: 0 0.7rem;
+
+        a{
+            color: $white !important;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+
+    .navbar-brand{
+        font-weight: 700;
+        span{
+            font-weight: 900;
+        }
+    }
+}

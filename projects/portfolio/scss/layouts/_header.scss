@@ -1,0 +1,36 @@
+.intro-section{
+    @include gradient;
+    padding: 5rem 0 0 0;
+    width: 100%;
+    height: 100%;
+
+    .intros{
+
+
+        .video-box{
+            position: relative;
+
+            a{
+                @include absoluteCenter;
+            
+                span{
+                    
+                    i{
+                        font-size: 6rem;
+                        color: $white;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+.border-animation{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border: 0.55rem solid $primary;
+}
