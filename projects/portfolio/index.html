@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/vendors/glightbox/css/glightbox.min.css">
   </head>
   <body>
     <!-- NAVBAR -->
@@ -99,10 +100,16 @@
                 alt="video illustration"
                 class="img-fluid"
               />
-              <a href="#" class=""
-                ><span><i class="fas fa-play-circle"></i></span
-              ></a>
-              <span class="border-animation"></span>
+              <a
+                href="#"
+                class="glightbox position-absolute top-50 start-50 translate-middle"
+                ><span>
+                  <i class="fas fa-play-circle"></i>
+                  <i class="fas fa-send"></i>
+                </span>
+                <span class="border-animation border-animation--border-1"></span>
+                <span class="border-animation border-animation--border-2"></span>
+              </a>
             </div>
           </div>
         </div>
@@ -122,5 +129,17 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- use glightbox -->
+    <script src="./assets/vendors/glightbox/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = Glightbox(
+        {
+          "href": 'https://www.youtube.com/watch?v=Ga6RYejo6Hk',
+          "type": "video",
+          "source": "youtube",
+          "width": 900,
+        }
+      )
+    </script>
   </body>
 </html>
