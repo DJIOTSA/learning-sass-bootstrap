@@ -1,18 +1,50 @@
 .services {
+  position: relative;
+  padding: 7rem 0 0 0;
 
-    position: relative;
-    padding: 1rem 0;
-    margin-top: 15rem;
+  &__content {
+    padding: 1rem;
+    // margin-top: 1.5rem;
 
-    &__content {
-        padding: 1rem;
-        margin-top: 1.5 rem;
+    .icon {
+      font-size: 2.5rem;
+      color: $primary;
+    }
 
-
-        .icon{
-            font-size: 2.5rem;
-            color: $primary;
+    @include media-breakpoint-down(md) {
+        p{
+            font-size: 0.9rem;
         }
     }
-}
+  }
 
+  &__pic {
+    max-width: 85%;
+
+    @include media-breakpoint-down(md) {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 1rem 0 0 0;
+    h2,
+    h3,
+    h4,
+    p{
+      text-align: center;
+    }
+
+    .icon{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .btn-rounded {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
