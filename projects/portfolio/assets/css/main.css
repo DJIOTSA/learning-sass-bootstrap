@@ -453,6 +453,11 @@ textarea {
   }
 }
 
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -545,6 +550,10 @@ textarea {
 }
 
 @media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
   .col-sm-12 {
     flex: 0 0 auto;
     width: 100%;
@@ -573,9 +582,17 @@ textarea {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+  }
+  .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
   }
 }
 .table {
@@ -1815,6 +1832,10 @@ textarea.form-control-lg {
   z-index: 1030;
 }
 
+.d-inline-block {
+  display: inline-block !important;
+}
+
 .d-block {
   display: block !important;
 }
@@ -1928,6 +1949,10 @@ textarea.form-control-lg {
   justify-content: flex-end !important;
 }
 
+.justify-content-center {
+  justify-content: center !important;
+}
+
 .align-items-center {
   align-items: center !important;
 }
@@ -1994,6 +2019,11 @@ textarea.form-control-lg {
   padding: 1.5rem !important;
 }
 
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
 .pt-1 {
   padding-top: 0.25rem !important;
 }
@@ -2010,12 +2040,20 @@ textarea.form-control-lg {
   padding-top: 1.5rem !important;
 }
 
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem !important;
 }
 
 .pb-3 {
   padding-bottom: 1rem !important;
+}
+
+.pb-5 {
+  padding-bottom: 3rem !important;
 }
 
 .fs-1 {
@@ -2144,7 +2182,18 @@ textarea.form-control-lg {
 .rounded-pill {
   border-radius: var(--bs-border-radius-pill) !important;
 }
+@media (min-width: 768px) {
+  .d-md-block {
+    display: block !important;
+  }
+  .mb-md-0 {
+    margin-bottom: 0 !important;
+  }
+}
 @media (min-width: 992px) {
+  .d-lg-flex {
+    display: flex !important;
+  }
   .mb-lg-0 {
     margin-bottom: 0 !important;
   }
@@ -2550,236 +2599,103 @@ textarea.form-control-lg {
   background-color: #151414;
 }
 
-/*!
- * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2024 Fonticons, Inc.
- */
-:root {
-  --fa-style-family-brands: "Font Awesome 6 Brands";
-  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+.contact-box {
+  position: relative;
+}
+.contact-box__icon {
+  width: 2rem;
+  stroke: #9926f0;
+  padding-top: 0.5rem;
+}
+@media (min-width: 576px) {
+  .contact-box__icon {
+    width: 4rem;
+  }
+}
+.contact-box__info {
+  padding: 0.4rem;
+  font-weight: 600;
+}
+.contact-box__info--title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+@media (max-width: 991.98px) {
+  .contact-box__info--title {
+    font-size: 0.875rem;
+  }
+}
+.contact-box__info--subtitle {
+  color: #adb5bd;
+  text-decoration: none;
+  font-size: 1rem;
+}
+@media (max-width: 991.98px) {
+  .contact-box__info--subtitle {
+    font-size: 0.675rem;
+  }
 }
 
-@font-face {
-  font-family: "Font Awesome 6 Brands";
-  font-style: normal;
+.footer-sm a {
+  color: #fff;
+}
+.footer-sm a i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+@media (min-width: 576px) {
+  .footer-sm a i {
+    width: 1.6rem;
+  }
+}
+
+.company-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.company-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.company-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+.company-list li a:hover {
+  color: #9926f0;
+}
+
+.footer-bottom {
+  background-color: #000;
+}
+.footer-bottom__copyright {
+  color: #6c757d;
   font-weight: 400;
-  font-display: block;
-  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype");
+}
+.footer-bottom__copyright a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+.footer-bottom__copyright a:hover {
+  color: #9926f0;
+  text-decoration: underline;
 }
 
-/*!
- * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2024 Fonticons, Inc.
- */
-:root {
-  --fa-style-family-classic: "Font Awesome 6 Free";
-  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+.back-to-up {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
 }
-
-@font-face {
-  font-family: "Font Awesome 6 Free";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype");
-}
-
-/*!
- * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2024 Fonticons, Inc.
- */
-.fa {
-  font-family: var(--fa-style-family, "Font Awesome 6 Free");
-  font-weight: var(--fa-style, 900);
-}
-
-
-.fas,
-.fa {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: var(--fa-display, inline-block);
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-}
-
-.fas {
-  font-family: "Font Awesome 6 Free";
-}
-@keyframes fa-beat {
-  0%, 90% {
-    transform: scale(1);
-  }
-  45% {
-    transform: scale(var(--fa-beat-scale, 1.25));
-  }
-}
-@keyframes fa-bounce {
-  0% {
-    transform: scale(1, 1) translateY(0);
-  }
-  10% {
-    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-  }
-  30% {
-    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-  }
-  50% {
-    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-  }
-  57% {
-    transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
-  }
-  64% {
-    transform: scale(1, 1) translateY(0);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0);
-  }
-}
-@keyframes fa-fade {
-  50% {
-    opacity: var(--fa-fade-opacity, 0.4);
-  }
-}
-@keyframes fa-beat-fade {
-  0%, 100% {
-    opacity: var(--fa-beat-fade-opacity, 0.4);
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(var(--fa-beat-fade-scale, 1.125));
-  }
-}
-@keyframes fa-flip {
-  50% {
-    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-  }
-}
-@keyframes fa-shake {
-  0% {
-    transform: rotate(-15deg);
-  }
-  4% {
-    transform: rotate(15deg);
-  }
-  8%, 24% {
-    transform: rotate(-18deg);
-  }
-  12%, 28% {
-    transform: rotate(18deg);
-  }
-  16% {
-    transform: rotate(-22deg);
-  }
-  20% {
-    transform: rotate(22deg);
-  }
-  32% {
-    transform: rotate(-12deg);
-  }
-  36% {
-    transform: rotate(12deg);
-  }
-  40%, 100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes fa-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-readers do not read off random characters that represent icons */
-
-.fa-paint-brush::before {
-  content: "\f1fc";
-}
-
-.fa-hand::before {
-  content: "\f256";
-}
-
-.fa-star::before {
-  content: "\f005";
-}
-
-.fa-play-circle::before {
-  content: "\f144";
-}
-
-.fa-cloud-upload::before {
-  content: "\f0ee";
-}
-
-.fa-code::before {
-  content: "\f121";
-}
-
-.fa-arrow-right::before {
-  content: "\f061";
-}
-
-.fa-tools::before {
-  content: "\f7d9";
-}
-
-.fa-phone-alt::before {
-  content: "\f879";
-}
-
-.fa-quote-right::before {
-  content: "\f10e";
-}
-
-.fa-long-arrow-alt-left::before {
-  content: "\f30a";
-}
-
-.fa-long-arrow-alt-right::before {
-  content: "\f30b";
-}
-
-.fa-arrow-down::before {
-  content: "\f063";
-}
-
-.fa-quote-left::before {
-  content: "\f10d";
-}
-
-.fa-paper-plane::before {
-  content: "\f1d8";
-}
-
-/*!
- * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2024 Fonticons, Inc.
- */
-:root {
-  --fa-style-family-classic: "Font Awesome 6 Free";
-  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Free";
-  font-style: normal;
-  font-weight: 900;
-  font-display: block;
-  src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype");
-}
-.fas {
-  font-weight: 900;
+.back-to-up i {
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
